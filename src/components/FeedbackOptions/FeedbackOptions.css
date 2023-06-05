@@ -1,0 +1,55 @@
+
+
+.FidbackList {
+  display: inline-block;
+  padding: 0;
+ 
+  /* border: 1px solid black; */
+  margin-bottom: 60px;
+  margin-top: 40px;
+
+}
+
+.FidbackBtn {
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #EEE;
+  box-shadow: inset 0px 0px 8px #2c3a7b;
+  cursor: pointer;
+}
+
+.FidbackBtn:hover {
+  background-color: #ccc;
+  box-shadow: 0px 0px 6px #2c3a7b;
+  /* animation: pulsare 500ms ease-in-out; */
+  /* color: azure; */
+}
+
+.FidbackBtn:active {
+  background-color: #aaa;
+  /* outline: 2px solid black; */
+  /* animation: pulsare 500ms ease-in-out; */
+  color: rgb(255, 100, 100);
+  /* font-weight: 600; */
+}
+
+.FidbackBtn:not(:last-child) {
+  margin-right: 12px;
+}
+
+
+
+/* .profile:hover{
+    background-color: rgba(94, 122, 247, 0.378);
+    animation: pulsare 1s ease-in-out;
+} */
+
+/* @keyframes pulsare {
+    0% {
+        box-shadow: 0 0 15px #5ddcff,
+            0 0 10px #4e00c2;
+    }
+} */
