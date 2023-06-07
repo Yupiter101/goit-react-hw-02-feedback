@@ -6,8 +6,6 @@ import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
 import Section from "./Section/Section";
 
 
-
-
 class App extends React.Component {
 
   state = {
@@ -69,28 +67,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-
-
-
-        // <div>
-        //   {feedbackBtns.map((btn) => (
-        //     <button key={btn} type="button" 
-        //       onClick={()=> this.handleBtnFeesback(btn)}>{btn}</button>
-        //     ))}
-        // </div>
-
-
-
-        // <ul>
-        //   {feedbackBtns.map(btn => (
-        //     <li key={btn}>{btn}:{this.state[btn.toLowerCase()]}</li>
-        //     ))}
-        // </ul>
-
-        // <ul>
-        //   <li>Total:{countTotalFeedback()}</li>
-        //   <li>Positve feedback: {countPositiveFeedbackPercentage()} %</li>
-        // </ul>
-
