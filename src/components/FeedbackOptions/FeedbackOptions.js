@@ -1,14 +1,10 @@
-import React from "react";
+
 import PropTypes from 'prop-types';
 import "./FeedbackOptions.css";
 
 
 
-class FeedbackOptions extends React.Component {
-
-  render() {   
-    const { options, onLeaveFeedback } = this.props;
-    // console.log(options);
+function FeedbackOptions({ options, onLeaveFeedback }) {
 
     return (
       <div className="FidbackList">
@@ -19,10 +15,13 @@ class FeedbackOptions extends React.Component {
           >{option.charAt(0).toUpperCase() + option.slice(1)}</button>)}
       </div>
     )
-  }
+  
 }
 
 export default FeedbackOptions;
+
+
+
 
 FeedbackOptions.propType = {
   onLeaveFeedback: PropTypes.func.isRequired,

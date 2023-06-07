@@ -1,16 +1,11 @@
-import React, { Fragment } from "react";
-import PropTypes from 'prop-types';
 
+import PropTypes from 'prop-types';
 import "./Statistics.css";
 
 
-class Statistics extends React.Component {
-
-  render() {
-    const {good, neutral, bad, total, positivePercentage} =this.props;
-
+function Statistics({good, neutral, bad, total, positivePercentage}) {
     return (
-      <Fragment>
+      <>
         <ul className="StatList">
           <li className="StatItem">good:<span>{good}</span></li>
           <li className="StatItem">neutral:<span>{neutral}</span></li>
@@ -19,12 +14,12 @@ class Statistics extends React.Component {
           <li className="StatItem">Total:<span>{total()}</span></li>
           <li className="StatItem">Positve feedback:<span>{positivePercentage()}%</span></li>
         </ul>
-      </Fragment>
+      </>
     )
-  }
 }
 
 export default Statistics;
+
 
 
 Statistics.propTypes = {
