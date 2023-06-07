@@ -1,15 +1,16 @@
 
 import PropTypes from 'prop-types';
-import "./FeedbackOptions.css";
+// import "./FeedbackOptions.module.css";
+import css from './FeedbackOptions.module.css';
 
 
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
 
     return (
-      <div className="FidbackList">
+      <div className={css.FidbackList}>
         {options.map(option => <button 
-            className="FidbackBtn"
+            className={css.FidbackBtn}
             key={option} 
             onClick={()=> onLeaveFeedback(option)}
           >{option.charAt(0).toUpperCase() + option.slice(1)}</button>)}
